@@ -1,0 +1,37 @@
+<header>
+        <h1>Centro Medico BioSalud <img src="images/logo.png" alt=""></h1>
+    </header>
+    <main class="tabla-container">
+        <table id="tabla-pacientes">
+            <h2>Listado de pacientes</h2>
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Número de Cédula</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Telefono</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla-pacientes">
+                {{#each resultado}}
+            <tr>
+                <td>{{nombres}}</td>
+                <td>{{apellidos}}</td>
+                <td>{{cedula}}</td>
+                <td>{{formatoFecha fecha_nacimiento}}</td>
+                <td>{{telefono}}</td>
+            </tr>
+                {{/each}}
+            </tbody>
+        </table><br>
+        <div class="boton-container">
+            <a href="../index.html"><input type="button" value="Volver"></a>
+        </div>
+    </main>
+    <footer>
+        <h3>Realizado por: Valentina Bolivar</h3>
+        <a href="https://www.linkedin.com/in/valentina-bolivar-araque-429830252/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" width="40px"></a>
+        <a href="https://www.facebook.com/valentina.bolivararaque" target="_blank"><img src="images/facebook.png" alt="Facebook" width="40px"></a>
+        <a href="https://github.com/valebolivar99" target="_blank"><img src="images/github.png" alt="Github" width="40px"></a>
+</footer>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas especialidades</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro Medico BioSalud <img class="logo" src="images/logo.png" alt=""></h1>
+    </header>
+    <main>
+        <h2>Consulta de citas medicas</h2>
+        <div class="container-form">
+            <form method="post" action="/consulta-cita">
+                <label for="especialidad">Especialidad:</label>
+                <select name="especialidad" id="especialidad" required>
+                    <option value="">----------Seleccione una opcion-----------</option>
+                    <option value="Medicina general">Medicina general</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Medicina interna">Medicina interna</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Rehabilitación física">Rehabilitación física</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Odontología">Odontología</option>
+                    <option value="Radiología">Radiología</option>
+                </select>
+                <input type="submit" value="Consultar">
+            </form>
+            <a href="../index.html"><input type="button" value="Volver"></a>
+        </div>
+    </main>
+    <footer>
+        <h3>Realizado por: Valentina Bolivar</h3>
+        <a href="https://www.linkedin.com/in/valentina-bolivar-araque-429830252/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" width="40px"></a>
+        <a href="https://www.facebook.com/valentina.bolivararaque" target="_blank"><img src="images/facebook.png" alt="Facebook" width="40px"></a>
+        <a href="https://github.com/valebolivar99" target="_blank"><img src="images/github.png" alt="Github" width="40px"></a>
+    </footer>
+</body>
+</html>

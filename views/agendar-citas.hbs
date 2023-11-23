@@ -1,0 +1,29 @@
+<header>
+    <h1>Centro Medico BioSalud <img class="logo" src="images/logo.png" alt=""></h1>
+</header>
+<main>
+    <h2>Agendamiento de citas</h2>
+    <div class="container-form">
+        <form method="post" action="/agregar-cita">
+            <label for="cedula">Número de cedula:</label>
+            <input type="number" id="cedula" name="cedula" required>
+            <label for="fecha_cita">Fecha de cita medica:</label>
+            <input type="date" id="fecha_cita" name="fecha_cita" required>
+            <label for="medico">Medico especialista:</label>
+            <select name="medico" id="medico" required>
+                <option value="">----------Seleccione una opcion-----------</option>
+                {{#each resultado}}
+                    <option value="{{cedula}}">{{nombres}} {{apellidos}}</option>
+                {{/each}}
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="../index.html"><input type="button" value="Volver"></a>
+    </div>
+</main>
+<footer>
+    <h3>Realizado por: Valentina Bolivar</h3>
+    <a href="https://www.linkedin.com/in/valentina-bolivar-araque-429830252/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" width="40px"></a>
+    <a href="https://www.facebook.com/valentina.bolivararaque" target="_blank"><img src="images/facebook.png" alt="Facebook" width="40px"></a>
+    <a href="https://github.com/valebolivar99" target="_blank"><img src="images/github.png" alt="Github" width="40px"></a>
+</footer>

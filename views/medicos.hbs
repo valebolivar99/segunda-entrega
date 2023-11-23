@@ -1,0 +1,40 @@
+<header>
+        <h1>Centro Medico BioSalud <img src="images/logo.png" alt=""></h1>
+    </header>
+    <main class="tabla-container">
+        <table id="tabla-medicos">
+            <h2>Listado de medicos</h2>
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Número de Cédula</th>
+                    <th>Consultorio</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Especialidad</th>
+            </thead>
+            <tbody>
+                <!-- Se agrega el contenido dinamicamente por medio de Handlebars -->
+                {{#each resultado}}
+                 <tr>
+                    <td>{{nombres}}</td>
+                    <td>{{apellidos}}</td>
+                    <td>{{cedula}}</td>
+                    <td>{{consultorio}}</td>
+                    <td>{{telefono}}</td>
+                    <td>{{correo}}</td>
+                    <td>{{especialidad}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table><br>
+        <div class="boton-container">
+            <a href="../index.html"><input type="button" value="Volver"></a>
+        </div>
+    <footer>
+        <h3>Realizado por: Valentina Bolivar</h3>
+        <a href="https://www.linkedin.com/in/valentina-bolivar-araque-429830252/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" width="40px"></a>
+        <a href="https://www.facebook.com/valentina.bolivararaque" target="_blank"><img src="images/facebook.png" alt="Facebook" width="40px"></a>
+        <a href="https://github.com/valebolivar99" target="_blank"><img src="images/github.png" alt="Github" width="40px"></a>
+    </footer>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro médicos</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro Medico BioSalud <img src="images/logo.png" alt=""></h1>
+    </header>
+    <main>
+        <form method="post" action="/agregar-medico"  class="form-container">
+            <h2>Registro de médicos</h2>
+            <label for="nombres">Nombres:</label> 
+            <input type="text" id="nombres" name="nombres" required> 
+            <label for="apellidos">Apellidos:</label> 
+            <input type="text" id="apellidos" name="apellidos" required> 
+            <label for="cedula">Número de Cédula:</label> 
+            <input type="number" id="cedula" name="cedula" required> 
+            <label for="consultorio">Número de consultorio:</label> 
+            <input type= "number" id="consultorio" name="consultorio" required> 
+            <label for="telefono">Telefono:</label> 
+            <input type="tel" id="telefono" name="telefono" required> 
+            <label for="correo">Correo electronico:</label> 
+            <input type= "email" id="correo" name="correo" required> 
+            <label for="especialidad">Especialidad:</label>
+            <select name="especialidad" id="especialidad" required>
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select> <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="boton-container">
+            <a href="../index.html"><input type="button" value="Volver"></a>
+        </div>
+    </main>
+    <footer>
+        <h3>Realizado por: Valentina Bolivar</h3>
+        <a href="https://www.linkedin.com/in/valentina-bolivar-araque-429830252/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" width="40px"></a>
+        <a href="https://www.facebook.com/valentina.bolivararaque" target="_blank"><img src="images/facebook.png" alt="Facebook" width="40px"></a>
+        <a href="https://github.com/valebolivar99" target="_blank"><img src="images/github.png" alt="Github" width="40px"></a>
+    </footer>
+</body>
+</html>

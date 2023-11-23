@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de pacientes</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro Medico BioSalud <img src="images/logo.png" alt=""></h1>
+    </header>
+    <main>
+        <form method="post" action="/agregar-paciente" class="form-container">
+            <h2>Registro de pacientes</h2>
+            <label for="nombres">Nombres:</label> 
+            <input type="text" id="nombres" name="nombres" required> 
+            <label for="apellidos">Apellidos:</label> 
+            <input type="text" id="apellidos" name="apellidos" required> 
+            <label for="cedula">Número de Cédula:</label> 
+            <input type="number" id="cedula" name="cedula" required>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label> 
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required> 
+            <label for="telefono">Telefono:</label> 
+            <input type="tel" id="telefono" name="telefono" required> 
+            <label for="especialidad requerida">Especialidad requerida:</label> 
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="boton-container">
+            <a href="../index.html"><input type="button" value="Volver"></a>
+        </div>
+    </main>
+    <footer>
+        <h3>Realizado por: Valentina Bolivar</h3>
+        <a href="https://www.linkedin.com/in/valentina-bolivar-araque-429830252/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" width="40px"></a>
+        <a href="https://www.facebook.com/valentina.bolivararaque" target="_blank"><img src="images/facebook.png" alt="Facebook" width="40px"></a>
+        <a href="https://github.com/valebolivar99" target="_blank"><img src="images/github.png" alt="Github" width="40px"></a>
+</body>
+</html>
