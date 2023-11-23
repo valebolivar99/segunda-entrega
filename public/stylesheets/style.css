@@ -52,7 +52,7 @@ h1 {
 h2 {
   text-align: center;
   color: #f7fcfd;
-  font-size: 20px;
+  font-size: 30px;
   border-color: #000000;
   border-style: Solid;
   border-width: 3px;
@@ -151,7 +151,7 @@ th {
 .tabla-container {
   max-width: 80%;
 }
-.listado-container {
+.listado-container ul {
   max-width: 70%;
 }
 .boton-container {
@@ -161,17 +161,6 @@ th {
 a{
   text-decoration: none;
 }
-.listado-servicios a {
-  color: #f7fcfd;
-  font-size: 20px;
-  /* border-color: #000000;
-  border-style: Solid;
-  border-width: 3px;
-  padding: 10px;
-  font-style: italic;
-  font-weight: bold;*/
-  background-color: #000000
-}
 
 .listado-servicios {
   margin: 10px
@@ -180,3 +169,23 @@ a{
 .listado-servicios li::marker {
   content: 🐾;
 }
+
+nav a{
+  text-decoration:none;
+  color:#ffffff;
+  font-size:17px;
+  font-weight: bold;
+  } 
+  nav li{
+  display:inline-block;
+  width:12%;
+  padding:15px 20px;
+  border:2px solid #000;
+  text-align:center;
+  color:#000000;
+  background-color: #54c8e9
+  }
+  nav li:hover{
+  background-color:#000000;
+  color:#000;
+  }
